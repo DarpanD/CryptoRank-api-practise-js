@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+body {
+  background-color: rgb(191, 196, 197);
+}
+
+.webtittle {
+  padding: 0.5em 0;
+  display: flex;
+  justify-content: center;
+}
+.tittleword {
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 0.25em 2em;
+  letter-spacing: 8px;
+}
+.header {
+  border-bottom: 4px solid black;
+}
+.header h1 {
+  font-size: 2em;
+  padding: 4rem 4rem 2rem 10%;
+}
+.lowerbox {
+  display: grid;
+  grid-template-columns: 65% 25%;
+  gap: 10%;
+  padding: 2rem;
+  position: absolute;
+  left: 5%;
+  right: 5%;
+}
+.catlog {
+  width: 100%;
+  background-color: rgba(107, 107, 116, 0.726);
+}
+.ranking {
+  width: 100%;
+  background-color: blue;
+}
+.card-body {
+  padding: 1.25rem 3rem;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  gap: 0.75em;
+  grid-template-rows: auto;
+  justify-content: center;
+  letter-spacing: 2px;
+}
+.card {
+  margin: 1rem;
+  border: none;
+  border-radius: 20px;
+  box-shadow: none;
+}
+.card::before {
+  content: "";
+  border-radius: 20px;
+  background: url(https://th.bing.com/th/id/OIP.MY3VwVZLY3Jo2EgOK28YIgHaFj?pid=ImgDet&rs=1);
+  background-size: 100%;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.coinsymandname {
+  grid-row: span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.coinsymbol {
+  font-size: 2.25em;
+}
+.coinname {
+  font-size: 1em;
+}
+
+.coinrank {
+  font-size: 2.5em;
+}
+.coinrank span {
+  font-size: 1rem;
+}
+.coinprice {
+  font-size: 1.25em;
+  letter-spacing: normal;
+}
+.perci1h,
+.perci24h,
+.perci7d {
+  grid-row: span 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 0.75em;
+  letter-spacing: 1px;
+  text-align: start;
+}
+.perci1h span,
+.perci24h span,
+.perci7d span {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5em;
+  color: aliceblue;
+  border-radius: 50px;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.perci1h span {
+  background-color: green;
+}
+.perci24h span {
+  background-color: green;
+}
+.perci7d span {
+  background-color: green;
+}
