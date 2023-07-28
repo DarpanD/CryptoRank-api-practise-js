@@ -13,7 +13,8 @@ rep
     // console.log(a);
     let cardhtml = "";
     for (i in a) {
-      console.log(a[i]);
+      // console.log(a[i]);
+
       cardhtml += ` <div  id="${a[i].id}" class="card">
           <div class="card-body">
             <div class="coinsymandname">
@@ -34,19 +35,15 @@ rep
           </div>
         </div>`;
       cc.innerHTML = cardhtml;
-      ===== background of negative percent_change_1h not working=========
-      =============================================
-      let per1 = JSON.stringify(a[i].percent_change_1h);
-      per1 = JSON.parse(per1);
-      if (per1 < 0) {
-        console.log(per1);
-        let col = document.getElementsByClassName("spanperci1h")[0];
-        console.log(col);
-        col.style.backgroundColor = "red";
-      }
-    }
-//   });
 
-// function myFunction() {
-//   console.log("hellow");
-// }
+      // =====change background to red for negative percantange chace value (not working) ========
+      // let per1 = JSON.stringify(a[i].percent_change_1h);
+      // per1 = JSON.parse(per1);
+      // if (per1 < 0) {
+      //   console.log(per1);
+      //   let col = document.getElementsByClassName("spanperci1h")[0];
+      //   console.log(col);
+      //   col.style.backgroundColor = "red";
+      // }
+    }
+  });
